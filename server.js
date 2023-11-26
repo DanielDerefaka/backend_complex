@@ -25,7 +25,7 @@ app.use(express.json())
 
 connectToDatabase();
 // coinbaseapi();
-const port = process.env.APP_PORT || 8080 
+const port = process.env.PORT || 8080 
 
 
 // HTTP GET request
