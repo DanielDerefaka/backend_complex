@@ -38,38 +38,6 @@ app.get('/', (req, res) => {
 app.use('/api', router)
 
 
-// app.get('/getCoinbaseCharges', (req, res) => {
-//     const options = {
-//       method: 'GET',
-//       hostname: 'api.commerce.coinbase.com',
-//       path: '/charges',
-//       headers: {
-//         'Content-Type': 'application/json',
-//         'Accept': 'application/json',
-//         'X-CC-Api-Key': '2994289c-faac-42e4-a7ae-7df75d719820',
-//         'X-CC-Version': '2018-03-22' 
-//       }
-//     };
-  
-//     const apiRequest = https.request(options, (apiResponse) => {
-//       let data = '';
-  
-//       apiResponse.on('data', (chunk) => {
-//         data += chunk;
-//       });
-  
-//       apiResponse.on('end', () => {
-//         res.json(JSON.parse(data));
-//       });
-//     });
-  
-//     apiRequest.on('error', (error) => {
-//       console.error(error);
-//       res.status(500).json({ error: 'Internal Server Error' });
-//     });
-  
-//     apiRequest.end();
-//   });
 
 
   
