@@ -31,7 +31,7 @@ const port = process.env.PORT || 8080
 // HTTP GET request
 
 app.get('/', (req, res) => {
-    res.status(201).json('Home Get Request')
+    res.send('App is Running')
 });
 
 // api route
